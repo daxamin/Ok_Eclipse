@@ -70,7 +70,6 @@ public class Fixit {
 			Thread.sleep(delT);
 			r.keyRelease(keyEn);
 			
-			
 		}catch(Exception e) {
 			System.out.println("Debug: Got into catch");
 			e.printStackTrace();
