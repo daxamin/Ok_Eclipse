@@ -23,9 +23,9 @@ import edu.cmu.sphinx.api.SpeechResult;
 import edu.cmu.sphinx.result.WordResult;
 import edu.ncstate.csc510.okeclipse.builder.CommandsBuilder;
 import edu.ncstate.csc510.okeclipse.common.VoiceRecognizer;
+import edu.ncstate.csc510.okeclipse.fixit.Fixit;
 import edu.ncstate.csc510.okeclipse.model.OECommand;
 import edu.ncstate.csc510.okeclipse.util.Util;
-import fixit.Fixit;
 
 /**
  * 
@@ -73,14 +73,27 @@ public class SpeechHandler extends AbstractHandler {
 					
 					monitor.setTaskName("You've asked for " + spokenText);
 					
-					if (spokenTextFinal.equals("fix")) {
-						System.out.println("Fix detected");
-						Fixit fixit = new Fixit();
-						fixit.fix();
+					if (spokenTextFinal.equals("fix") || spokenTextFinal.equals("fixit")) {
+						fixInBackground();
 					}
 
 					monitor.worked(1);
 					monitor.done();
+				}
+
+				private void fixInBackground() {
+					Runnable runnable = new Runnable() {
+
+						@Override
+						public void run() {
+							// TODO Auto-generated method stub
+							System.out.println("Fix detected");
+							Fixit fixit = new Fixit();
+							fixit.fix();
+						}	
+					};
+					Thread thread = new Thread(runnable);
+					thread.start();
 				}
 
 			});

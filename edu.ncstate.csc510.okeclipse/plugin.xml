@@ -216,5 +216,8 @@
    <extension
          point="org.eclipse.jdt.ui.quickAssistProcessors">
    </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+   </extension>
 
 </plugin>
