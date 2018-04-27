@@ -4,19 +4,66 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IWorkbenchWindow;
 
 public class Fixit {
 	
-	int delT = 10;
+	int delT = 15;
 	
 	public void fix() {
 		
-		for (int i = 0; i < 2; i++) {
+//		displayLogInBg();
+		
+		for (int i = 0; i < 10; i++) {
 			runTheRobot();
 			getNextEr();
 		}
 		
+	}
+
+	private void displayLogInBg() {
+		// TODO Auto-generated method stub
+		Runnable runnable = new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				System.out.println("Trying to show dialog");
+				final Display display = new Display();
+				final Shell shell = new Shell(display);
+				shell.setText("StackOverflow");
+				shell.setLayout(new GridLayout());
+
+				Button button = new Button(shell, SWT.PUSH);
+				button.setText("Open new Shell");
+				button.addListener(SWT.Selection, (event) -> {
+				    Shell child = new Shell(shell);
+				    child.setText("Child");
+				    child.setVisible(true);
+				    child.setSize(300,200);
+				});
+
+				shell.pack();
+				shell.open();
+
+				while (!shell.isDisposed())
+				{
+				    if (!display.readAndDispatch())
+				        display.sleep();
+				}
+//				display.dispose();
+			}
+						
+		};
+		
+		Thread thread = new Thread(runnable);
+		thread.run();
+
 	}
 
 	private void getNextEr() {
