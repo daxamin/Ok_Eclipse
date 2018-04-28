@@ -23,8 +23,8 @@ import edu.cmu.sphinx.api.SpeechResult;
 import edu.cmu.sphinx.result.WordResult;
 import edu.ncstate.csc510.okeclipse.builder.CommandsBuilder;
 import edu.ncstate.csc510.okeclipse.common.VoiceRecognizer;
-import edu.ncstate.csc510.okeclipse.fixit.Fixit;
 import edu.ncstate.csc510.okeclipse.model.OECommand;
+import edu.ncstate.csc510.okeclipse.oep.Fixit;
 import edu.ncstate.csc510.okeclipse.util.Util;
 
 /**
