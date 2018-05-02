@@ -5,7 +5,7 @@ OkEclipse+ is Eclipse plugin to augment User Experience in IDE by enabling voice
 ## Installing OkEclipse+
 
 1. First download Eclipse RCP (Rich CLient Platform) version
-2. Download OkEclipse+ from ------link------
+2. Download OkEclipse+ from the master branch
 3. Now open the downloaded file in Eclipse RCP
 4. Run it as an Eclipse application
 5. Here another window will open for OkEclipse+ which uses the voice recognition. A list of voice commands that can be used will be shown on a panel on right side of the screen. You will also see the following screen:
@@ -16,6 +16,7 @@ OkEclipse+ is Eclipse plugin to augment User Experience in IDE by enabling voice
 
 ## Demo
 
+[Youtube video](https://www.youtube.com/watch?v=SL1EN92PTIY)
 
 # Ok Eclipse - CSC 510 Software Engineering (Spring 2018) project - Group 'O' <Enter>[](https://github.com/snaraya7/Ok_Eclipse/blob/master/img/logo.png) 
 
