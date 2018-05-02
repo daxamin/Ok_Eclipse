@@ -26,7 +26,7 @@ OkEclipse+ is Eclipse plugin to augment User Experience in IDE by enabling voice
 
 ## Demo
 
-https://www.youtube.com/watch?v=SL1EN92PTIY
+<iframe width="854" height="480" src="https://www.youtube.com/embed/SL1EN92PTIY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 ## @authors
