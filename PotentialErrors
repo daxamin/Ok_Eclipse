@@ -1,4 +1,4 @@
-      case IProblem.UnterminatedString:
+case IProblem.UnterminatedString:
       case IProblem.UnusedImport:
       case IProblem.DuplicateImport:
       case IProblem.CannotImportPackage:
@@ -158,4 +158,47 @@
       case IProblem.MissingOverrideAnnotation:
       case IProblem.MissingOverrideAnnotationForInterfaceMethodImplementation:
       case IProblem.MethodMustOverride:
-     
+      case IProblem.MethodMustOverrideOrImplement:
+      case IProblem.IsClassPathCorrect:
+      case IProblem.MethodReturnsVoid:
+      case IProblem.ForbiddenReference:
+      case IProblem.DiscouragedReference:
+      case IProblem.UnnecessaryNLSTag:
+      case IProblem.AssignmentHasNoEffect:
+      case IProblem.UnsafeTypeConversion:
+      case IProblem.UnsafeElementTypeConversion:
+      case IProblem.RawTypeReference:
+      case IProblem.UnsafeRawMethodInvocation:
+      case IProblem.RedundantSpecificationOfTypeArguments:
+      case IProblem.UndefinedAnnotationMember:
+      case IProblem.MissingValueForAnnotationMember:
+      case IProblem.FallthroughCase:
+      case IProblem.NonGenericType:
+      case IProblem.UnhandledWarningToken:
+      case IProblem.UnusedWarningToken:
+      case IProblem.RedundantSuperinterface:
+      case IProblem.JavadocInvalidMemberTypeQualification:
+      case IProblem.IncompatibleTypesInForeach:
+      case IProblem.MissingEnumConstantCase:
+      case IProblem.MissingEnumDefaultCase:
+      case IProblem.MissingDefaultCase:
+      case IProblem.MissingEnumConstantCaseDespiteDefault:
+      case IProblem.MissingSynchronizedModifierInInheritedMethod:
+      case IProblem.UnusedObjectAllocation:
+      case IProblem.MethodCanBeStatic:
+      case IProblem.MethodCanBePotentiallyStatic:
+      case IProblem.AutoManagedResourceNotBelow17:
+      case IProblem.MultiCatchNotBelow17:
+      case IProblem.PolymorphicMethodNotBelow17:
+      case IProblem.BinaryLiteralNotBelow17:
+      case IProblem.UnderscoresInLiteralsNotBelow17:
+      case IProblem.SwitchOnStringsNotBelow17:
+      case IProblem.DiamondNotBelow17:
+      case IProblem.PotentialHeapPollutionFromVararg:
+      case IProblem.UnsafeGenericArrayForVarargs:
+      case IProblem.SafeVarargsOnFixedArityMethod:
+      case IProblem.SafeVarargsOnNonFinalInstanceMethod:
+      case IProblem.RequiredNonNullButProvidedNull:
+      case IProblem.RequiredNonNullButProvidedPotentialNull:
+      case IProblem.RequiredNonNullButProvidedSpecdNullable:
+      case IProblem.RequiredNonNullButProvidedUnknown:
